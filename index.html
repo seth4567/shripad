@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Bonsai Plants</title>
+  <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+<style>
+  body,
+  html {
+    background: #000000;
+  }
+
+  @keyframes myanimation {
+    0% {
+      background-image: url(1.png);
+    }
+
+    50% {
+      background-image: url(2.png);
+    }
+
+    100% {
+      background-image: url(0.png);
+    }
+  }
+
+  .image-area{
+    height: 100vh;
+    width: 100vw;
+    animation-name: myanimation;
+    animation-duration: 10s;
+    transition: ease;
+    animation-timing-function: ease-in-out;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: content-box;
+    background-position: center;
+    opacity: 0.35;
+  }
+  .container {
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    background: #000000;
+  }
+
+  .middle {
+    position: absolute;
+    font-family: Satisfy, cursive;
+    color: #ffffff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  hr {
+    margin: auto;
+    width: 75vw;
+  }
+
+  #myCarousel {
+    height: 100vh;
+  }
+</style>
+
+<body>
+
+  <div class="container">
+    <div class="image-area"></div>
+      <div class="middle">
+        <h1>Coming Soon</h1>
+        <hr>
+        <p><a style="color:#ffffff; font-family: sans-serif; font-size: 2.5rem; text-decoration: none;"
+            href="mailto:shripadadvocates@gmail.com" target="_blank">shripadadvocates@gmail.com</a></p>
+      </div>
+    </div>
+
+</body>
+
+</html>
